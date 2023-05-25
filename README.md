@@ -1,9 +1,8 @@
 # Re_Mechanical_Life
 
-技育アドバンス公開
+技育アドバンス公開作品
 
 # 開発区分担当
-
 - GPTAPIでの応答処理
 - 食材画像認識
 - LINEChatBot
@@ -18,6 +17,8 @@
 - Swift/SwiftUI
 - Kotlin
 - OpenCV
+- Vue.js
+- Docker
 - OpenWeatherMapAPI
 - LINE API
 - GPT3.5
