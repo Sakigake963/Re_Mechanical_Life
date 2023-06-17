@@ -28,3 +28,9 @@
 * ソースコードはなるべく綺麗にかつ効率的にお願いします。
 * モジュール等に分けてもらってOKです。
 
+# requirements
+requirementx.txtに使うライブラリが記述されている。
+各自の仮想環境(virtualenvやDockerなど)で以下のコマンドを実行すると、各ライブラリがインストールされる。
+```
+pip install -r requirements.txt
+```
