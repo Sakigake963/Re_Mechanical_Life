@@ -1,5 +1,12 @@
 # ignore folders or files
+# 環境変数（SECRET_KEYやAPI_KEYのファイル）
 settings_local.py
+# 仮想環境のフォルダー
+.venv/
+# vscodeのフォルダー
+.vscode/
+.gitignore
+credentials.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

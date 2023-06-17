@@ -1,2 +1,4 @@
-Django
+jango
 line-bot-sdk
+datetime
+pytz

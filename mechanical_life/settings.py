@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-#from settings_local import * # import SECRET_KEY, API_KEY from local file
+from settings_local import * # ローカルファイルから環境変数を取得(SECRET_KEYなど)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
