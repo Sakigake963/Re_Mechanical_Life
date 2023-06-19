@@ -1,10 +1,11 @@
 import urllib.request, json
 import urllib.parse
 import datetime
+import os
 
 #Google Maps Platform Directions API endpoint
 endpoint = 'https://maps.googleapis.com/maps/api/directions/json?'
-api_key = 'AIzaSyBICPxWgeecD98TOFIbfvgmpzx_ghBTVGc'
+googlemap_api = os.environ["googlemap_api"]
 
 #出発地、目的地を入力
 origin = input('出発地を入力: ').replace(' ','+')
@@ -21,7 +22,7 @@ unix_time = int(dtime.timestamp())
 # print(unix_time)
 # print('=====')
 
-nav_request = 'language=ja&origin={}&destination={}&departure_time={}&key={}'.format(origin,destination,unix_time,api_key)
+nav_request = 'language=ja&origin={}&destination={}&departure_time={}&key={}'.format(origin,destination,unix_time,googlemap_api)
 nav_request = urllib.parse.quote_plus(nav_request, safe='=&')
 request = endpoint + nav_request
 
