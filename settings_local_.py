@@ -4,5 +4,9 @@
 xxxの中身を変える。
 """
 
-SECRET_KEY = 'xxx'
-API_KEY = 'xxx'
+#SECRET_KEY = 'xxx'
+#API_KEY = 'xxx'
+
+import os
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
