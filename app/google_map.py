@@ -11,8 +11,7 @@ import os
 
 #Google Maps Platform Directions API endpoint
 endpoint = 'https://maps.googleapis.com/maps/api/directions/json?'
-# GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
-GOOGLE_API_KEY = "AIzaSyBICPxWgeecD98TOFIbfvgmpzx_ghBTVGc"
+GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 #出発地、目的地を入力
 origin = "名古屋駅" # 出発地
 destination = "栄駅" # 目的地
@@ -66,7 +65,7 @@ for key in directions['routes']:
 
 
 # OpenWeatherMap APIキーを設定します
-WEATHER_API_KEY = 'adf3684ba949b3bf361a0cdcbbcc5a62'
+WEATHER_API_KEY = os.environ["WEATHER_API_KEY"]
 
 # 天気情報を取得するためのAPIリクエストを作成します
 url = f'http://api.openweathermap.org/data/2.5/forecast?lat={latitude}&lon={longitude}&appid={WEATHER_API_KEY}'
