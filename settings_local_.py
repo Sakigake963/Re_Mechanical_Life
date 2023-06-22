@@ -7,4 +7,5 @@ xxxの中身を変える。
 #SECRET_KEY = 'xxx'
 #API_KEY = 'xxx'
 
+OPENAI_API_KEY = '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'
 
