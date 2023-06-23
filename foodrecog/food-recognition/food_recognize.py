@@ -3,18 +3,22 @@ Recognize food: fruit, vegetable
 """
 
 from camera import camera
+from hsv import hsv
 import io
 import os
 from datetime import datetime
-
+import time
+import requests as req
+import sys
 import cv2
+import signal
 from google.cloud import vision_v1p3beta1 as vision
 
 # Setup google authen client key
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'client_key.json'
 
 # Source path content all images
-SOURCE_PATH = "/home/pi/ml/Re_Mechanical_Life/foodrecog/foods/"
+SOURCE_PATH = "/home/pi/mll/Re_Mechanical_Life/foodrecog/foods/"
 
 FOOD_TYPE = 'Fruit'  #'Vegetable'
 
@@ -62,9 +66,12 @@ def recognize_food(img_path, list_foods):
 
     for label in labels:
         #if len(text.description) == 10:
+        cnt = 1
         desc = label.name.lower()
         score = round(label.score, 2)
         print("label: ", desc, "  score: ", score)
+        #res = req.post("http://your-django-app.com/receive_data/"json={"food"+str(cnt):desc})
+        cnt += 1
         if (desc in list_foods):
             #score = round(label.score, 3)
             #print(desc, 'score: ', score)
@@ -78,12 +85,38 @@ def recognize_food(img_path, list_foods):
             break
         
     print('Total time: {}'.format(datetime.now() - start_time))
+
+
+'''
+def main():
+    path = SOURCE_PATH + 'camera_1.jpg
+    print('---------- Start FOOD Recognition --------')
+    list_foods = load_food_name(FOOD_TYPE)
+    #print(list_foods)
+    while(1):
+        camera('1')
+        value = hsv()
+        if(value >= 100):
+            path = SOURCE_PATH + 'camera_1.jpg'
+            recognize_food(path, list_foods)
+            time.sleep(2)
+        else:
+            continue
+        time.sleep(0.1)
         
-print('---------- Start FOOD Recognition --------')
-list_foods = load_food_name(FOOD_TYPE)
-print(list_foods)
-camera('1')
-path = SOURCE_PATH + 'camera_1.jpg'
-recognize_food(path, list_foods)
-print('---------- End ----------')
-        
+    print('---------- End ----------')
+'''
+
+def main():
+    path = SOURCE_PATH + 'camera_1.jpg'
+    list_foods = load_food_name(FOOD_TYPE)
+    while(1):
+        camera('1')
+        recognize_food(path, list_foods)
+        time.sleep(0.1)  
+
+
+try:
+    main()
+except KeyboardInterrupt:
+    signal.signal(signal.SIGNAL, signal.SIG_DFL)
