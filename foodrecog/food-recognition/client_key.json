@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "foodrecognization",
+  "private_key_id": "fa81733f15d228dd258cca66301c6b990d3f9872",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFrHwl5dYdVQzd\neSGSroiZjVsyHvynhCy5W/7iLnXt7FgJuwxlJkp+85QMVWKZI1plCLmZqQASWJr/\nh7Bh2WSE5ZxU89RAVOUaMjdBxuAYsWsRd0QynCH8BEKBc+Yz/I1n0Evn9cbYgbkF\njajc8Met8AgE6LYtwYHun3umnG0KDzIERi9mrqg3mL3gP20xQHxtpeOXAXEmqmc1\no4zZvaXkmQjn7d9+hGtdbhx7F2iYm8teNJkKcNCq5qjGy7NxZUriKAZ0j499aDJk\nVEYz2ZHrKKhETgZj0+aXfLfspLzr7nQAiOpQDB3K2b1Jxe7BZNm3kf/FXhsL/DCA\nfKaaFvh/AgMBAAECggEAFyal3Zxm8MWCvbePlonJZs525U5awdXJlSXwmpXdavGY\nt/8HqxsKc4bcins/knbhAd89OYFhCEUHVjESl8spqiToI8zwyV4H/QLvlM0RduLk\nisWgn5rIoibvkRC9X85O019CXJbc5IOA42UdZ07t2/G2RrjoiUBWEtfr1+4PGTPM\nmrIdwPxHS9zm2XcycLBiPU6M9BS+jhW+X0o2Ab4AI8d4AWxpQIwylV92vAW1bAb1\nyNK26c9+HvDQkW0NwX3BBIxczOmDjtomXB8ReciipspOpHekzxLYUwXJx3JztcaV\nvLA4FHRGqyPeDPRSWS/+srhmRP15Uky/EjeishAPzQKBgQDu3BYhm5YBTQgiItjI\nfMu22it+d5SaNLXCklMZirnrOuUbanVZ235YRtUB1zS0vg86/I6LK1Pg2Jfpl0I3\n3DdkFJBnFvT1dfwzubJFyPio5EupwwsFjIdMKCH2iFKlJOOJ2cipQyH8ifuZIkGF\nGR0FIBDqoQ8YFLNsE3vYoAnwQwKBgQDT281hjkJzUI0mNW+378e0woeCvFgF3JVJ\n5nvzCPkpBKtQKw8BHEvk+b8KFLhhLkTLfW5/QPk32Wn2ZLKM/c6UKUiH/id38mLM\ni3eKSVrvFTTUybpdMBicClMsnRAZVmZvPKYL5ZipUbn2s0lmwV3/SwGTK1rKm22c\nHrvVcPIBFQKBgQCvu/sIZOjbMiqOuuaVssNKV39yf1Y0kh079t3ux9L7jwwqvIt0\nPfnZxttGjGf5pm+cLV5OY+VFYvV5ZdDROlMCbeLEBe7ZfSG9iJzxnOfdkoFcd+Rv\nA7IzRL+gGzH60IYb0MBCT+L8YyRZyQs9enmQYMQxa6eoRuqu1DLk8PH+8wKBgBdY\no3tap+v5NnS9csA8Ri+fODup8bFDq5fnNEWF+Z8Riqdc91xR9/MVqn275s2ewaoC\n+og/ardC2DB0zFBJL9iX7AxAb60CIu0TeWrdxo2OMrI4QLdAM5YOdTf3XuzL3qHn\ndwzckkQmY23SOAaAzJDzfQrwviKRmjSYFm7g8Wo5AoGAIDyqdoH7qmTZ5W3EmLJI\nngjnXMuNpXaCmDPnuSa3CtKCtiBqThNnG05JXoDooSrOZitesvCa7ALzOmqf96Rp\nCiFvup8jMGDxClCXOpt1Fg5NsJH43vIq4sw2lT41tCjxc5bxhjK1p7p2U8+nxOw0\nHg75anc47iB8A2JxRKCx+gg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "foodrecognization@foodrecognization.iam.gserviceaccount.com",
+  "client_id": "117318162247665627661",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/foodrecognization%40foodrecognization.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

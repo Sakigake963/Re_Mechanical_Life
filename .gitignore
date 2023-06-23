@@ -1,5 +1,6 @@
 # ignore folders or files
 settings_local.py
+client_key.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
